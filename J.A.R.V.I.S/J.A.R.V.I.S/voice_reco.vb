@@ -1,6 +1,6 @@
 public Class 'window name
 Dim WithEvents reco As New Speech.Recognition.SpeechRecognitionEngine
-'form load
+Public Sub 'form name load thingy
 reco.SetInputToDefaultAudioDevice()
 
 Dim gram_builder As Recognition.GrammarBuilder = New Recognition.GrammarBuilder
