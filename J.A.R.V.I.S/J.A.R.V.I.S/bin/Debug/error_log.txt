@@ -1,0 +1,5 @@
+2/9/2016 8:53:01 AMAn Error had occured In intiallisation Of Project Jarvis, Please Check your internet And your MicrophoneSystem.ArgumentNullException: Value cannot be null.
+Parameter name: phrase
+   at System.Speech.Internal.Helpers.ThrowIfEmptyOrNull(String s, String paramName)
+   at System.Speech.Recognition.Choices.Add(String[] phrases)
+   at J.A.R.V.I.S.MainWindow.MainWindow_Loaded(Object sender, RoutedEventArgs e) in G:\J.A.R.V.I.S\J.A.R.V.I.S\MainWindow.xaml.vb:line 114

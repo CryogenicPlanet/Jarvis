@@ -1,0 +1,85 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Configuration="clr-namespace:System.Configuration;assembly=System" x:Name="xyz" x:Class="MainWindow"
+    Title="Jarvis" Height="485.659" Width="728.488" ToolTip="Just A Rather Very Intelligent System" WindowStyle="None">
+    <Window.Resources>
+        <Grid x:Key="Timer" Tag="" ToolTip="" Background="White">
+            <Grid.ContextMenu>
+                <ContextMenu>
+                    <ContextMenu.Effect>
+                        <BlurEffect/>
+                    </ContextMenu.Effect>
+                </ContextMenu>
+            </Grid.ContextMenu>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="13*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Key="Text_timer" Tag="" ToolTip="" Background="White">
+            <Grid.ContextMenu>
+                <ContextMenu>
+                    <ContextMenu.Effect>
+                        <BlurEffect/>
+                    </ContextMenu.Effect>
+                </ContextMenu>
+            </Grid.ContextMenu>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="13*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="278*"/>
+        </Grid.RowDefinitions>
+        <Grid Height="382" HorizontalAlignment="Left" Margin="26,10,0,0" x:Name="Grid1" VerticalAlignment="Top" Width="544" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="134*"/>
+                <RowDefinition Height="97*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Height="114" HorizontalAlignment="Left" Margin="18,98,0,0" x:Name="Response_1" VerticalAlignment="Top" Width="516" TextWrapping="Wrap" />
+            <TextBox Height="83" HorizontalAlignment="Left" Margin="18,10,0,0" x:Name="Input1" VerticalAlignment="Top" Width="436" IsEnabled="False" TextWrapping="Wrap" />
+            <Expander x:Name="timer_expander" Header="" Margin="7,52.4,194,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Row="1" IsExpanded="True" Height="89">
+                <Expander.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-360.03"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Expander.RenderTransform>
+            </Expander>
+            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="10,0.4,0,0" VerticalAlignment="Top" Width="87" Grid.Row="1"/>
+            <TextBlock Height="32" HorizontalAlignment="Left" Margin="10,112.4,0,0" x:Name="Response_2" VerticalAlignment="Top" Width="516" RenderTransformOrigin="0.5,0.5" Grid.Row="1" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.777"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Button x:Name="Edit" Content="Edit" Margin="459,10,10,184.6" BorderThickness="0" RenderTransformOrigin="0.5,0.5" Background="#FFDDDDDD" ToolTip="Let me guess i didn't get what you said correctly">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </Grid>
+        <Label x:Name="Invis_Label" Content="Timer" HorizontalAlignment="Left" Margin="391,39.2,0,0" VerticalAlignment="Top" Opacity="0" Grid.Row="1"/>
+    </Grid>
+</Window>
