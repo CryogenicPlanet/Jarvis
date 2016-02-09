@@ -1,3 +1,11 @@
+Imports System.Speech
+Imports System.Threading
+Imports System.Globalization
+Imports System.IO
+Imports MySql.Data
+Imports MySql.Data.MySqlClient
+Imports MySql.Web
+Imports System.Data.OleDb
 public Class 'window name
 Dim WithEvents reco As New Speech.Recognition.SpeechRecognitionEngine
 Public Sub 'form name load thingy
